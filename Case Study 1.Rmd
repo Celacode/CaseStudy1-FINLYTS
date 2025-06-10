@@ -13,7 +13,8 @@ csl: apa.csl
 ## *Abstract* 
 
 ## *1 Background & Context* 
-Poverty 
+Poverty is one of the main issues the Philippines is facing to the present day. The Philippine Statistics Authority (PSA)  (2022) reported that the poverty rate in 2021 was 18.1 percent equating to  19.99 million Filipinos, with the poverty incidence among Filipino families being at 13.2 percent.  The poverty rate in 2022 was estimated to be at 17.1 percent according to the World Bank, this is due to factors such as recovering labor market indicators (Domingo, 2022). In 2023, the poverty rate in the Philippines dropped to 15.5 percent, equating to 17.54 million Filipinos, and the poverty incidence among families fell to 10.9 percent (Philippine Statistics Authority, 2023). 
+
 
 ## *2 Importance & Relevance*
 
