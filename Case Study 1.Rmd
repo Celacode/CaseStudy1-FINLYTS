@@ -1,31 +1,81 @@
 ---
-title: "A Case Study on the Impact of Microfinance Institutions on Poverty Alleviation
-  in Low-Income Households in the Philippines, 2021-2024"
+title: "**A Case Study on the Impact of Microfinance Institutions on Poverty Alleviation
+  in Low-Income Households in the Philippines, 2021-2024**"
 author: "U. Cortes, W.E. Limguangco"
 date: "2025-06-10"
 output: html_document
+css: style.css
+bibliography: references.bib
+csl: apa.csl
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+## *Abstract* 
+
+## *1 Background & Context* 
+
+## *2 Importance & Relevance*
+
+## *3 Objectives and Scope* 
+#### *3.1 Objectives*
+#### *3.2 Scope*
+
+## *4 Review of Related Literature* 
+
+#### *4.1 Drivers of the market*
+
+The Micro Finance market in the Philippines is developing as a result of the increased demand for financial inclusion, particularly among long-income households and small business owners. The growth of microfinance services is being supported by government programs and participation from global financial institutions. Access to microfinance products is being improved by the growing use of mobile banking and digital payment systems. Demand for microloans and financial services tailored to underprivileged groups is also being driven by the growth of small and medium-sized businesses (SMEs) and rural enterprises
+
+```{r echo=FALSE, results='asis'}
+library(knitr)
+library(kableExtra)
+
+# Create the table data
+bank_data <- data.frame(
+  Bank_Type = c("Rural Bank",
+                "Universal Bank", "Thrift Bank", "Rural Bank", "Cooperative Bank"),
+  Count = c(5, 1, 19, 96, 10),
+  Group = c("Microfinance-Oriented Banks",
+            rep("Microfinance-Engaged Banks", 4))
+)
+
+# Create the formatted table
+bank_data |>
+  kbl(
+    caption = "Table _: List of Banks with Microfinance Operations",
+    col.names = c("Bank Type", "Count", "Category"),
+    align = "lcc"
+  ) |>
+  kable_styling(full_width = FALSE, position = "center") |>
+  add_footnote("*Source: Bangko Sentral ng Pilipinas (BSP), 2024.*", notation = "none")
 ```
 
-## R Markdown
+Microfinance institutions (MFIs) play a significant role in advancing financial inclusion in the Philippines, with a presence in 80% of municipalities and cities. According to the [@bsp_speech_2021], 9% of Filipino adults maintain accounts with MFIs, positioning them the third most preferred account provider after e-money issuers and banks. It was reported that 23% of Filipino borrowers sourced their loans from MFIs in 2021, surpassing government institutions, cooperatives, and lending-financing institutions. Despite the significant challenges posed by the COVID-19 pandemic, which caused a contraction in loan growth and a sharp decline in repayment rates, the microfinance sector has shown resilience, with loan growth rebounding and repayment rates recovering steadily by early 2021. 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+MFIs, including 139 banks, microfinance NGOs with portfolios of ₱50.4 billion, and cooperatives with ₱288 billion in loans, enable microentrepreneurs to access credit without collateral and simple requirements, empowering many to “graduate” into formal banking. The BSP actively supports this sector by promoting credit access through guarantee programs and encouraging digitalization initiatives such as the Paleng-QR Ph and satellite technology for rural banks, which have proven essential during crises like typhoons 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-```
+#### *4.2 Changes in Household Income Among MFI beneficiaries*
 
-## Including Plots
+The average annual income of Filipino families in 2023 was estimated at PhP 353.23 thousand. This was higher by 15.0 percent from the PhP 307.19 thousand average family income in 2021. Moreover, the average annual family income in 2018 was recorded at PhP 313.45 thousand.
 
-You can also embed plots, for example:
+On the other hand, Filipino families spent an average of PhP 258.05 thousand in 2023, an increase of 12.8 percent compared to the PhP 228.80 thousand expenditure in 2021. In 2018, the average annual family expenditure was registered at PhP 238.75 thousand. 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Link: https://psa.gov.ph/statistics/income-expenditure/fies
+
+#### *4.3 Utilization of Microfinance Loans* 
+
+
+
+#### *4.4 Poverty Reduction and Limitations of Microfinance in the Philippines*
+
+
+## *Implications and Future Research* 
+
+## *Conclusion*
+
+## *References* 
+
+
+
