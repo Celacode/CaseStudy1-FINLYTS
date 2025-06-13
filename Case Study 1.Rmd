@@ -34,7 +34,38 @@ kable(data, caption = "Poverty Incidences in the Philippines from 2021–2024", 
 The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion (Batayola et al, 2024). There are approximately 6,183 microfinance institutions (MFIs) in the Philippines. The role of MFIs in inclusion and poverty reduction plays an important role in the Philippines. Quick and de Toledo (2024) further discussed the role of MFIs, such as providing financial services to low-income individuals and small businesses and promoting financial inclusion by ensuring marginalized communities have access to financial resources. Quick and Toledo explained further that providing financial resources and skills empowers individuals, especially women and vulnerable groups, strengthening social empowerment as a whole. Furthermore, the authors also explain that microfinance helps in resilience building, particularly in disaster-prone regions, as MFIs assist communities in rebuilding by providing them with essential financial tools. 
 
 
+The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion (Batayola et al, 2024). There are approximately 6,183 microfinance institutions (MFIs) in the Philippines. 
 
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+library(kableExtra)
+library(scales)
+
+# Create the data
+df <- data.frame(
+  `Microfinance Institutions` = c(
+    "Banks (as of 2022)",
+    "Cooperatives (2020)",
+    "Microfinance NGOs (as of 2022)",
+    "Financing Companies (as of 2017)",
+    "Lending Companies (as of 2017)",
+    "Total"
+  ),
+  `Number of Institutions` = comma(c(139, 2762, 27, 673, 2582, 6183))
+)
+
+# Display the table
+kable(df, align = "l", col.names = c("Microfinance Institutions", "Number of Institutions")) %>%
+  kable_styling(full_width = FALSE, position = "center")
+```
+
+The role of MFIs in inclusion and poverty reduction plays an important role in the Philippines. Quick and de Toledo (2024) further discussed the role of MFIs, such as providing financial services to low-income individuals and small businesses and promoting financial inclusion by ensuring marginalized communities have access to financial resources. The article explained further that providing financial resources and skills empowers individuals, especially women and vulnerable groups, strengthening social empowerment as a whole. Lastly, the authors also explain that microfinance helps in resilience building, particularly in disaster-prone regions, as MFIs assist communities in rebuilding by providing them with essential financial tools. 
+
+There are various socioeconomic challenges that low-income households face in the Philippines that the MFIs must address. The lack of jobs and low pay are the challenges being faced. According to IBON Foundation executive director Sonny Africa, self-rated poverty continues to rise due to the lack of job opportunities combined with low wages and high inflation in the country (ABS-CBN, 2023).  Inflation is another challenge that low-income households face. IBON Foundation (2024) reported that the overall inflation and food inflation were at their highest during July 2024 highlighting the failure of government efforts to control inflation, which is contrary to the government's repeated claims of success. IBON Foundation (2024) also mentioned that the PSA reported that the inflation for July 2024 increased to 4.4 percent from 3.7 percent in June 2024 after steadily increasing from 2.8 percent in January. The main drivers include higher electricity rates, more expensive meat and fruits, and an increase in oil prices. 
+
+```{r} 
+
+```
 
 
 
@@ -44,7 +75,12 @@ The importance of studying MFIs in the Philippines is to have a better understan
 
 ## *3 Objectives and Scope* 
 #### *3.1 Objectives*
+The objective of this study is to understand how effective microfinance institutions (MFIs) have been in assisting low-income households in improving their economic situation in the Philippines between 2021 and 2024. The study aims to measure the changes in household income among low-income MFI beneficiaries in the Philippines across four key periods: 2021 to 2024.  Furthermore, the study aims a to identify the most common purposes for which low-income households in the Philippines utilized microfinance loans and to analyze trends in loan repayment behavior among low-income MFI borrowers from 2021 to 2024. Finally, to compare the economic outcomes of low-income households with access to MFIs to those without access to MFIs during the period between 2021 and 2024. 
+
 #### *3.2 Scope*
+The scope of this study will focus on MFI beneficiaries from low-income households in the Philippines. The data of this study should span the years from 2021 to 2024. The study limits its focus to the utilization of microfinance loans and the repayment behavior of low-income households. Lastly, the study will focus on the economic outcomes of having access to MFIs in the Philippines.
+
+
 
 ## *4 Review of Related Literature* 
 
