@@ -19,16 +19,14 @@ library(knitr)
 library(kableExtra)
 
 poverty_data <- data.frame(
-  Year = c("2021\n(Philippine Statistics Authority, 2022)", 
-           "2022\n(Domingo, 2022)", 
-           "2023\n(Philippine Statistics Authority, 2024)", 
-           "2024\n(Philippine News Agency, 2024)"),
+  Year = c("2021", "2022", "2023", "2024"),
+  Source = c("Philippine Statistics Authority, 2022", "Domingo, 2022", "Philippine Statistics Authority, 2024", "Philippine News Agency, 2024"),
   Poverty_Incidence = c("18.1", "17.1 (Estimation)", "15.5", "13.6 (Estimation)")
 )
 
-kable(poverty_data, col.names = c("Year", "Poverty Incidence"), align = "c", caption = "Table _. Poverty Incidences in the Philippines 2021 to 2024.") %>%
+kable(poverty_data, col.names = c("Year", "Source", "Poverty Incidence (%)"), align = "c", caption = "Table _. Poverty Incidences in the Philippines 2021 to 2024.") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
-  footnote(general = "Sources: Philippine Statistics Authority (2022 & 2024), Domingo (2022) - Inquirer.com, Philippine News Agency (2024).")
+  add_footnote("Sources: Philippine Statistics Authority (2022 & 2024), Domingo (2022) - Inquirer, Philippine News Agency (2024).", notation = "none")
 ```
 The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion (Batayola et al, 2024). There are approximately 6,183 microfinance institutions (MFIs) in the Philippines. The role of MFIs in inclusion and poverty reduction plays an important role in the Philippines. Quick and de Toledo (2024) further discussed the role of MFIs, such as providing financial services to low-income individuals and small businesses and promoting financial inclusion by ensuring marginalized communities have access to financial resources. Quick and Toledo explained further that providing financial resources and skills empowers individuals, especially women and vulnerable groups, strengthening social empowerment as a whole. Furthermore, the authors also explain that microfinance helps in resilience building, particularly in disaster-prone regions, as MFIs assist communities in rebuilding by providing them with essential financial tools. 
 
