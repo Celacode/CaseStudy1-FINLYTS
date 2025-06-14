@@ -16,21 +16,23 @@ csl: apa.csl
 ## *1 Background & Context* 
 Poverty is one of the main issues the Philippines is experiencing to the present day. In 2021, [@PSA2022Poverty] reported that the poverty rate was 18.1 percent, equating to  19.99 million Filipinos, and the poverty incidence among Filipino families was 13.2 percent.  Furthermore, PSA reported that the proportion of Filipino families with insufficient income to meet basic food needs stood at 3.9 percent, and among Filipinos,  6 in 100 lived below the food threshold in 2021. In 2022, the PSA has not released the official poverty statistics of the Philippines for the year, however, according to [@Domingo2022] of Inquirer, the poverty incidence in the Philippines was projected to ease to 17.1 percent from 18.1 percent in 2021, thanks to recovering labor market indicators according to the World Bank.
 
-```{r echo=FALSE, results='asis'}
+In 2023, the poverty rate in the Philippines dropped to 15.5 percent, equating to 17.54 million Filipinos, and the poverty incidence among families at 10.9 percent, translating to 2.99 million Filipino families whose incomes are below the poverty threshold [@PSA2024Poverty]. According to an article from [@pna_article_1235008], poverty in the Philippines is expected to decline, but with risks of extreme climatic events. Furthermore, the article stated that the poverty incidence rate for 2024 is projected to decrease to 13.6 percent. 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
 library(kableExtra)
 
 poverty_data <- data.frame(
-  Year = c("2021", "2022", "2023", "2024"),
-  Source = c("Philippine Statistics Authority, 2022", "Domingo, 2022", "Philippine Statistics Authority, 2024", "Philippine News Agency, 2024"),
-  Poverty_Incidence = c("18.1", "17.1 (Estimation)", "15.5", "13.6 (Estimation)")
+  Year = c("2021", "2022 (Estimation)", "2023", "2024 (Estimation)"),
+  Poverty_Incidence = c("18.1%", "17.1%", "15.5%", "13.6%")
 )
 
-kable(poverty_data, col.names = c("Year", "Source", "Poverty Incidence (%)"), align = "c", caption = "Table _. Poverty Incidences in the Philippines 2021 to 2024.") %>%
+kable(poverty_data, col.names = c("Year", "Poverty Incidence"), align = "c") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
-  add_footnote("*Sources: Philippine Statistics Authority (2022 & 2024), Domingo (2022) - Inquirer, Philippine News Agency (2024).*", notation = "none")
+  add_footnote("*Sources: Philippine Statistics Authority (2022 & 2024), Domingo (2022) via Inquirer, Philippine News Agency (2024).*", notation = "none")
+
 ```
-The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion (Batayola et al, 2024). There are approximately 6,183 microfinance institutions (MFIs) in the Philippines. The role of MFIs in inclusion and poverty reduction plays an important role in the Philippines. Quick and de Toledo (2024) further discussed the role of MFIs, such as providing financial services to low-income individuals and small businesses and promoting financial inclusion by ensuring marginalized communities have access to financial resources. Quick and Toledo explained further that providing financial resources and skills empowers individuals, especially women and vulnerable groups, strengthening social empowerment as a whole. Furthermore, the authors also explain that microfinance helps in resilience building, particularly in disaster-prone regions, as MFIs assist communities in rebuilding by providing them with essential financial tools. 
+The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion . There are approximately 6,183 microfinance institutions (MFIs) in the Philippines. The role of MFIs in inclusion and poverty reduction plays an important role in the Philippines. Quick and de Toledo (2024) further discussed the role of MFIs, such as providing financial services to low-income individuals and small businesses and promoting financial inclusion by ensuring marginalized communities have access to financial resources. Quick and Toledo explained further that providing financial resources and skills empowers individuals, especially women and vulnerable groups, strengthening social empowerment as a whole. Furthermore, the authors also explain that microfinance helps in resilience building, particularly in disaster-prone regions, as MFIs assist communities in rebuilding by providing them with essential financial tools. 
 
 
 The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion (Batayola et al, 2024). There are approximately 6,183 microfinance institutions (MFIs) in the Philippines. 
