@@ -27,7 +27,7 @@ poverty_data <- data.frame(
   Poverty_Incidence = c("18.1", "17.1", "15.5", "13.6")
 )
 
-kable(poverty_data, col.names = c("Year", "Poverty Incidence (%)"), align = "c") %>%
+kable(poverty_data, col.names = c("Year", "Poverty Incidence (%)"), align = "c", caption = "Table 1. Poverty Incidences in the Philippines 2021 to 2024.") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
   add_footnote("*Sources: Philippine Statistics Authority (2022 & 2024), Domingo (2022) via Inquirer, Philippine News Agency (2024).*", notation = "none")
 
@@ -51,7 +51,7 @@ microfinance_data <- data.frame(
 # Format numbers with commas
 microfinance_data$Number_of_Institutions <- comma(microfinance_data$Number_of_Institutions)
 
-kable(microfinance_data, col.names = c("Microfinance Institutions", "Number of Institutions"), caption = "Table _. Microfinance Institutions and their numbers in the Philippines") %>%
+kable(microfinance_data, col.names = c("Microfinance Institutions", "Number of Institutions"), caption = "Table 2. Microfinance Institutions and their numbers in the Philippines") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
   add_footnote("*Source: Social Enterprise Development Partnerships, Inc., 2023 (Rapisura, 2023)*", notation = "none")
 ```
@@ -69,11 +69,40 @@ inflation_data <- data.frame(
   Inflation_Rate = c(2.8, 3.7, 4.4)
 )
 
-kable(inflation_data, col.names = c("Month 2024", "Inflation Rate (%)"), digits = 1, caption = "Table _. Inflation Rate for the months of January, June, and July in 2024.") %>%
+kable(inflation_data, col.names = c("Month 2024", "Inflation Rate (%)"), digits = 1, caption = "Table 3. Inflation Rate for the months of January, June, and July in 2024.") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
   add_footnote("*Source: IBON Foundation, 2024*", notation = "none")
 
 ```
+
+Additionally, food inflation was at its worst last July 2024 for all groups. Food inflation was 3.3 percent in January 2024, then rose to 6.5 percent in June 2024, and is already at 6.7% by July 2024. Meanwhile, for the poorest 30% of  Filipino families who spend half of their incomes on food,  the food inflation rate was 5.3% in January 2024, rose to 8.4% in June 2024 then went up to 8.7% in July 2024 (IBON Foundation, 2024).
+
+```{r echo=FALSE, message=FALSE}
+library(knitr)
+library(kableExtra)
+# Data frame with clear column names
+food_inflation <- data.frame(
+  Month_2024 = c("January", "June", "July"),
+  Overall_Food_Inflation_Rate_Percent = c("2.8%", "3.7%", "4.4%"),
+  Food_Inflation_Rate_Poorest_30_Percent = c("5.3%", "8.4%", "8.7%")
+)
+
+# Update column headers for display
+colnames(food_inflation) <- c(
+  "Month (2024)",
+  "Overall Food Inflation Rate (%)",
+  "Food Inflation Rate for the Poorest 30% (%)"
+)
+
+# Build the table
+kable(food_inflation,
+      caption = "Table 4: Food Inflation Rates in the Philippines for the Overall Population and the Poorest 30%, January, June, and July 2024",
+      align = "lcc", booktabs = TRUE, format = "html") %>%
+  kable_styling(full_width = FALSE, position = "center") %>%
+  column_spec(2:3, width = "5cm") %>%
+  add_footnote("*Source: IBON Foundation, 2024*", notation = "none")
+```
+
 
 Lastly, rising healthcare costs continue to negatively affect low-income households. The Global Medical Trends Survey of Wills Towers Watson (WTW) found that medical costs in the Philippines are projected to increase by double digits for the third consecutive year at 18.3 percent with little relief. The respondents of the WTW survey cited an increased use of health services, rising hospital and clinic costs, increasing professional fees, and higher frequency of diseases to be the main drivers of overall increased medical costs in the country [@wtw2025healthcare]. 
 
@@ -88,10 +117,10 @@ library(kableExtra)
 
 # Create the data frame
 apac_costs <- data.frame(
-  Country = c("India", "Indonesia", "Malaysia", "New Zealand", "Philippines", "Thailand"),
-  `2023` = c("14.6%", "12.4%", "16.7%", "12.2%", "18.2%", "9.2%"),
-  `2024` = c("15.3%", "16.2%", "14.2%", "13.6%", "19.3%", "13.2%"),
-  `2025` = c("17.0%", "19.4%", "15.9%", "16.0%", "18.3%", "14.5%")
+  Country = c("Philippines"),
+  `2023` = c("17.9%"),
+  `2024` = c("19.3"),
+  `2025` = c("18.3")
 )
 
 # Clean up column names to remove the "X"
@@ -99,7 +128,7 @@ colnames(apac_costs) <- c("Country", "2023", "2024", "2025 (Projected)")
 
 # Build the table
 kable(apac_costs,
-      caption = "Table _. Global medical trends: healthcare benefit cost increases, 2023 – 2025 (gross) - (APAC markets with higher percentages than regional average in 2025 (projected)",
+      caption = "Table 5. Global medical trends: healthcare benefit cost increases, 2023 – 2025 (gross) - Philippines",
       align = "lccc", booktabs = TRUE, format = "html") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
   column_spec(2:4, width = "3cm") %>%
