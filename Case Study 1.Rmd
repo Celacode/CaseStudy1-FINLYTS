@@ -27,7 +27,7 @@ poverty_data <- data.frame(
   Poverty_Incidence = c("18.1", "17.1", "15.5", "13.6")
 )
 
-kable(poverty_data, col.names = c("Year", "Poverty Incidence (%)"), align = "c", caption = "Table 1. Poverty Incidences in the Philippines 2021 to 2024.") %>%
+kable(poverty_data, col.names = c("Years", "Poverty Incidence (%)"), align = "c", caption = "Table 1. Poverty Incidences in the Philippines 2021 to 2024.") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
   column_spec(1, width = "6cm") %>%  # Narrowing the first column
   column_spec(2, width = "6cm") %>%  # Narrowing the second column
@@ -77,7 +77,7 @@ kable(inflation_data, col.names = c("Month (2024)", "Inflation Rate (%)"), digit
 
 ```
 
-Additionally, food inflation was at its worst last July 2024 for all groups. Food inflation was 3.3 percent in January 2024, then rose to 6.5 percent in June 2024, and is already at 6.7% by July 2024. Meanwhile, for the poorest 30% of  Filipino families who spend half of their incomes on food,  the food inflation rate was 5.3% in January 2024, rose to 8.4% in June 2024 then went up to 8.7% in July 2024 (IBON Foundation, 2024).
+Food inflation is another challenge being faced, food inflation was at its worst last July 2024 for all groups. Food inflation was 3.3 percent in January 2024, then rose to 6.5 percent in June 2024, and is already at 6.7% by July 2024. Meanwhile, for the poorest 30% of  Filipino families who spend half of their incomes on food,  the food inflation rate was 5.3% in January 2024, rose to 8.4% in June 2024 then went up to 8.7% in July 2024 [@ibon2024foodinflation].
 
 ```{r echo=FALSE, message=FALSE}
 library(knitr)
