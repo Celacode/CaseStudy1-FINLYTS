@@ -24,18 +24,18 @@ library(kableExtra)
 
 poverty_data <- data.frame(
   Year = c("2021", "2022 (Estimation)", "2023", "2024 (Estimation)"),
-  Poverty_Incidence = c("18.1%", "17.1%", "15.5%", "13.6%")
+  Poverty_Incidence = c("18.1", "17.1", "15.5", "13.6")
 )
 
-kable(poverty_data, col.names = c("Year", "Poverty Incidence"), align = "c") %>%
+kable(poverty_data, col.names = c("Year", "Poverty Incidence (%)"), align = "c") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
   add_footnote("*Sources: Philippine Statistics Authority (2022 & 2024), Domingo (2022) via Inquirer, Philippine News Agency (2024).*", notation = "none")
 
 ```
-The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion . There are approximately 6,183 microfinance institutions (MFIs) in the Philippines. The role of MFIs in inclusion and poverty reduction plays an important role in the Philippines. Quick and de Toledo (2024) further discussed the role of MFIs, such as providing financial services to low-income individuals and small businesses and promoting financial inclusion by ensuring marginalized communities have access to financial resources. Quick and Toledo explained further that providing financial resources and skills empowers individuals, especially women and vulnerable groups, strengthening social empowerment as a whole. Furthermore, the authors also explain that microfinance helps in resilience building, particularly in disaster-prone regions, as MFIs assist communities in rebuilding by providing them with essential financial tools. 
+The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion . There are approximately 6,183 microfinance institutions (MFIs) in the Philippines. The role of MFIs in inclusion and poverty reduction plays an important role in the Philippines. [@cafamerica_microfinance_philippines_2024] further discussed the role of MFIs, such as providing financial services to low-income individuals and small businesses and promoting financial inclusion by ensuring marginalized communities have access to financial resources. Quick and Toledo explained further that providing financial resources and skills empowers individuals, especially women and vulnerable groups, strengthening social empowerment as a whole. Furthermore, the authors also explain that microfinance helps in resilience building, particularly in disaster-prone regions, as MFIs assist communities in rebuilding by providing them with essential financial tools. 
 
 
-The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion (Batayola et al, 2024). There are approximately 6,183 microfinance institutions (MFIs) in the Philippines. 
+The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion [@batayola_martir_2024]. There are approximately 6,183 microfinance institutions (MFIs) in the Philippines [@rapisura2023philippine].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
@@ -53,12 +53,12 @@ microfinance_data$Number_of_Institutions <- comma(microfinance_data$Number_of_In
 
 kable(microfinance_data, col.names = c("Microfinance Institutions", "Number of Institutions"), caption = "Table _. Microfinance Institutions and their numbers in the Philippines") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
-  add_footnote("*Source: Social Enterprise Development Partnerships, Inc., 2023*", notation = "none")
+  add_footnote("*Source: Social Enterprise Development Partnerships, Inc., 2023 (Rapisura, 2023)*", notation = "none")
 ```
 
 The role of MFIs in inclusion and poverty reduction plays an important role in the Philippines. [@cafamerica_microfinance_philippines_2024] further discussed the role of MFIs, such as providing financial services to low-income individuals and small businesses and promoting financial inclusion by ensuring marginalized communities have access to financial resources. The article explained further that providing financial resources and skills empowers individuals, especially women and vulnerable groups, strengthening social empowerment as a whole. Lastly, the authors also explain that microfinance helps in resilience building, particularly in disaster-prone regions, as MFIs assist communities in rebuilding by providing them with essential financial tools. 
 
-There are various socioeconomic challenges that low-income households face in the Philippines that the MFIs must address. The lack of jobs and low pay are the challenges being faced. According to IBON Foundation executive director Sonny Africa, self-rated poverty continues to rise due to the lack of job opportunities combined with low wages and high inflation in the country (ABS-CBN, 2023).  Inflation is another challenge that low-income households face. [@ibon2024foodinflation] reported that the overall inflation and food inflation were at their highest during July 2024 highlighting the failure of government efforts to control inflation, which is contrary to the government's repeated claims of success. The article also mentioned that the PSA reported that the inflation for July 2024 increased to 4.4 percent from 3.7 percent in June 2024 after steadily increasing from 2.8 percent in January. The main drivers include higher electricity rates, more expensive meat and fruits, and an increase in oil prices. 
+There are various socioeconomic challenges that low-income households face in the Philippines that the MFIs must address. The lack of jobs and low pay are the challenges being faced. According to IBON Foundation executive director Sonny Africa, self-rated poverty continues to rise due to the lack of job opportunities combined with low wages and high inflation in the country [@africa2023filipinos].  Inflation is another challenge that low-income households face. [@ibon2024foodinflation] reported that the overall inflation and food inflation were at their highest during July 2024 highlighting the failure of government efforts to control inflation, which is contrary to the government's repeated claims of success. The article also mentioned that the PSA reported that the inflation for July 2024 increased to 4.4 percent from 3.7 percent in June 2024 after steadily increasing from 2.8 percent in January. The main drivers include higher electricity rates, more expensive meat and fruits, and an increase in oil prices. 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
