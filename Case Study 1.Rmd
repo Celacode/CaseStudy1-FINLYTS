@@ -71,7 +71,7 @@ inflation_data <- data.frame(
   Inflation_Rate = c(2.8, 3.7, 4.4)
 )
 
-kable(inflation_data, col.names = c("Month 2024", "Inflation Rate (%)"), digits = 1, caption = "Table 3. Inflation Rate for the months of January, June, and July in 2024.") %>%
+kable(inflation_data, col.names = c("Month (2024)", "Inflation Rate (%)"), digits = 1, caption = "Table 3. Inflation Rate for the months of January, June, and July in 2024.") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
   add_footnote("*Source: IBON Foundation, 2024*", notation = "none")
 
