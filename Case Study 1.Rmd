@@ -37,7 +37,7 @@ kable(poverty_data, col.names = c("Years", "Poverty Incidence (%)"), align = "c"
 The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion . There are approximately 6,183 microfinance institutions (MFIs) in the Philippines. The role of MFIs in inclusion and poverty reduction plays an important role in the Philippines. [@cafamerica_microfinance_philippines_2024] further discussed the role of MFIs, such as providing financial services to low-income individuals and small businesses and promoting financial inclusion by ensuring marginalized communities have access to financial resources. Quick and Toledo explained further that providing financial resources and skills empowers individuals, especially women and vulnerable groups, strengthening social empowerment as a whole. Furthermore, the authors also explain that microfinance helps in resilience building, particularly in disaster-prone regions, as MFIs assist communities in rebuilding by providing them with essential financial tools. 
 
 
-The microfinance sector has experienced significant growth in the Philippines in recent years.  As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion [@batayola_martir_2024]. There are approximately 6,183 microfinance institutions (MFIs) in the Philippines [@rapisura2023philippine]. 
+As of March 2022, the Bangko Sentral ng Pilipinas (BSP) reported that the microfinance sector has expanded to a loan portfolio of Php 406 billion [@batayola_martir_2024]. The study also states that the microfinance sector is a vital contributor to the country's economic development and financial inclusion. Moreover,  there are approximately 6,183 microfinance institutions (MFIs) in the Philippines with 18.2 million recorded microfinance clients in the banking system, microfinance non-government organizations (NGOs), and cooperative sectors [@rapisura2023philippine]. 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
@@ -135,7 +135,7 @@ kable(apac_costs,
       align = "lccc", booktabs = TRUE, format = "html") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
   column_spec(2:4, width = "3cm") %>%
-  add_footnote("*Source: Global Medical Trends 2025 Survey of global health insurers - Wills   Towers Watsons, 2025*.", notation = "none")
+  add_footnote("*Source: Global Medical Trends 2025 Survey of global health insurers - Wills   Towers Watson, 2025*.", notation = "none")
 ```
 
 
