@@ -77,7 +77,7 @@ kable(inflation_data, col.names = c("Month (2024)", "Inflation Rate (%)"), digit
 
 ```
 
-Food inflation is another challenge being faced, food inflation was at its worst last July 2024 for all groups. Food inflation was 3.3 percent in January 2024, then rose to 6.5 percent in June 2024, and is already at 6.7% by July 2024. Meanwhile, for the poorest 30% of  Filipino families who spend half of their incomes on food,  the food inflation rate was 5.3% in January 2024, rose to 8.4% in June 2024 then went up to 8.7% in July 2024 [@ibon2024foodinflation].
+Another challenge was food inflation, food inflation was at its worst last July 2024 for all groups. Food inflation was 3.3 percent in January 2024, then rose to 6.5 percent in June 2024, and is already at 6.7% by July 2024. Meanwhile, for the poorest 30% of  Filipino families who spend half of their incomes on food,  the food inflation rate was 5.3% in January 2024, rose to 8.4% in June 2024 then went up to 8.7% in July 2024 [@ibon2024foodinflation].
 
 ```{r echo=FALSE, message=FALSE}
 library(knitr)
