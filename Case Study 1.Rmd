@@ -29,6 +29,8 @@ poverty_data <- data.frame(
 
 kable(poverty_data, col.names = c("Year", "Poverty Incidence (%)"), align = "c", caption = "Table 1. Poverty Incidences in the Philippines 2021 to 2024.") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
+  column_spec(1, width = "5cm") %>%  # Narrowing the first column
+  column_spec(2, width = "5cm") %>%  # Narrowing the second column
   add_footnote("*Sources: Philippine Statistics Authority (2022 & 2024), Domingo (2022) via Inquirer, Philippine News Agency (2024).*", notation = "none")
 
 ```
