@@ -136,7 +136,7 @@ kable(apac_costs,
       align = "lccc", booktabs = TRUE, format = "html") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
   column_spec(2:4, width = "3cm") %>%
-  add_footnote("*Source: Global Medical Trends 2025 Survey of global health insurers - Wills   Towers Watson, 2025*.", notation = "none")
+  add_footnote("*Source: Global Medical Trends 2025 Survey of global health insurers - Wills Towers Watson, 2025*.", notation = "none")
 ```
 
 
